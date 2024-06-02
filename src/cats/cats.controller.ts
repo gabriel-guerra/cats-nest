@@ -2,7 +2,7 @@ import { Body, Controller, Delete, Get, HttpCode, HttpException, HttpStatus, Par
 import { CreateCatDto } from "./dto/create-cat.dto";
 import { UpdateCatDto } from "./dto/update-cat.dto";
 import { CatsService } from "./cats.service";
-import { Cat } from "./interfaces/cat.interface";
+import { Cat } from "./schemas/cat.schema";
 
 
 @Controller('cats')

@@ -1,4 +1,3 @@
-//import { Cat } from "./interfaces/cat.interface";
 import { Injectable } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
 import { Cat } from "./schemas/cat.schema";
@@ -9,11 +8,9 @@ import { UpdateCatDto } from "./dto/update-cat.dto";
 @Injectable()
 export class CatsService{
     constructor(@InjectModel(Cat.name) private catModel: Model<Cat>){}
-    //private readonly cats: Cat[] = [];
 
     async create(createCatDto: CreateCatDto): Promise<Cat>{
         const createdCat = new this.catModel(createCatDto)
-        throw new Error();
         return await createdCat.save();
     }
 
