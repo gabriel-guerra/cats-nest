@@ -1,11 +1,11 @@
 # Configurar um módulo Nest
 
 ### Fazer 1 vez para todo o projeto
-1. Na module do app principal, configurar a conexão com o banco de dados
-2. Na função main, configurar o validation pipe
+1. Criar o projeto utilizando o `nest new`
+2. Na module do app principal, configurar a conexão com o banco de dados 
+3. Na função main, configurar o validation pipe
 
 ### Em um novo módulo do projeto
-3. Criar o projeto utilizando o `nest new`
 4. Criar uma pasta para o módulo, dentro da SRC
 5. Criar uma pasta de schema ou entity
 6. Dentro dessa pasta, mapear as entidades
